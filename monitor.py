@@ -175,7 +175,7 @@ class MangaBuffMonitor:
                 r_post = self.session.post(
                     f"{BASE_URL}/login",
                     data={
-                        "login": self.config.MANGABUFF_EMAIL,
+                        "email": self.config.MANGABUFF_EMAIL,
                         "password": self.config.MANGABUFF_PASSWORD,
                         "_token": csrf,
                     },
